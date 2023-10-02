@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Operations{
+public class Operations{
     public double add(double a, double b){
         return a+b;
     }
@@ -16,19 +16,21 @@ class Operations{
 
 }
 public class SimpleCalculator {
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         Operations op = new Operations();
         Scanner sc = new Scanner(System.in);
         double a,b, answer=0;
 
         System.out.println("Basic Calculator");
         while (true){
-            System.out.println("1. Addition");
-            System.out.println("2. Subtraction");
-            System.out.println("3. Multiplication");
-            System.out.println("4. Divition");
-            System.out.println("5. Exit");
+            System.out.println("Enter 1 for Addition");
+            System.out.println("Enter 2 for Subtraction");
+            System.out.println("Enter 3 for Multiplication");
+            System.out.println("Enter 4 for Divition");
+            System.out.println("Enter 5 to Exit/Restart");
+            
             int choice = sc.nextInt();
+            
             switch (choice) {
                 case 1 -> {
                     System.out.println("Enter two numbers:");
